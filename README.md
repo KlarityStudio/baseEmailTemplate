@@ -9,6 +9,6 @@ Remember once you have finished creating your css styles, copy and past it in th
 
 #Note:
 
-1. Design and code for mobile first as you can change font sizes, dimensions or positions with media queries.
+1. Design and code for mobile first as you can't change font sizes, dimensions or positions with media queries.
 2. Background images aren't supported across all browsers.
 3. For a full list of css attributes that are available across browsers, check https://www.campaignmonitor.com/css/

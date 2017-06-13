@@ -26,9 +26,8 @@ div[style*="margin: 16px 0"] {
 	-ms-text-size-adjust: 100%;
 }
 .webkit {
-	max-width: 100%;
-	padding: 5vw;
-
+	max-width: 650px;
+	padding: 40px;
 }
 .outer {
 	Margin: 0 auto;
@@ -182,14 +181,14 @@ a {
 }
 
 .card {
-	padding: 40px;
+	padding: 10px;
 }
 
 .card-text {
-	padding: 10px;
-	margin-bottom: 1rem;
-	font-size: 1.2rem;
-	line-height: 1.4em;
+	padding: 10px 0 10px 0;
+	margin-bottom: 2px;
+	font-size: 14px;
+	line-height: 16px;
 	color: #fff;
 }
 
@@ -197,20 +196,25 @@ a {
 	padding: 0;
 }
 
-.card-text ul li {
+ul {
+	padding: 0;
+}
+
+li {
 	list-style: none;
+	padding: 0;
 }
 
 .white-card {
 	background: #fff;
-	padding: 40px;
+	padding: 10px;
 }
 
 .white-card-text{
-	padding: 10px;
-	margin-bottom: 1rem;
-	font-size: 1.2rem;
-	line-height: 1.4em;
+	padding: 10px 0 10px 0;
+	margin-bottom: 2px;
+	font-size: 14px;
+	line-height: 16px;
 	color: #666;
 }
 
@@ -220,8 +224,8 @@ a {
 	padding: 16px 20px 20px 60px;
 	background-color: #19c361;
 	color: #fff;
-	font-size: 2.5rem;
-	line-height: 1.5em;
+	font-size: 24px;
+	line-height: 24px;
 	text-align: center;
 	margin: 0;
 }
@@ -233,6 +237,12 @@ a {
 .vehicle-details .inner-card tr td {
 	display: inline-block;
 	overflow-wrap: break-word;
+}
+
+.vehicle-title div {
+	display: inline-block;
+    font-size: 10px;
+    vertical-align: text-top;
 }
 
 /*Media Queries*/

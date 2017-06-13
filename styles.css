@@ -7,8 +7,8 @@ body {
 }
 table {
 	border-spacing: 0;
-	font-family: sans-serif;
 	color: #333333;
+	overflow: hidden; 
 }
 td {
 	padding: 0;
@@ -228,6 +228,11 @@ a {
 
 .location-details {
 	background-image: linear-gradient(135deg, #005cb9, #02458f);
+}
+
+.vehicle-details .inner-card tr td {
+	display: inline-block;
+	overflow-wrap: break-word;
 }
 
 /*Media Queries*/

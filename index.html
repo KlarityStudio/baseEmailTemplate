@@ -15,7 +15,7 @@
 	<![endif]-->
 </head>
 <body>
-	<center class="wrapper">
+	<div class="wrapper" align="center">
 		<table width="100%">
 			<tr>
 				<h1 class="banner-confirmed">Booking Confirmed. Reference #{{rentalAgreementResponse.bluebird_res_id}}</h1>
@@ -156,6 +156,101 @@
 						</td>
 					</table>
 				</tr>
+				<tr>
+					<table width="100%">
+						<td class="two-column">
+							<!--[if (gte mso 9)|(IE)]>
+							<table width="100%">
+								<tr>
+									<td width="50%" valign="top">
+							<![endif]-->
+							<div class="column renter-details">
+								<table width="100%">
+									<tr>
+										<td class="inner-card">
+											<table class="contents white-card">
+												<tr>
+													<td class="white-card-text">
+														<strong>Renter:</strong>&nbsp;{{designatedRenter.firstname}} {{designatedRenter.lastname}}
+													</td>
+												</tr>
+												<tr>
+													<td class="white-card-text">
+														<strong>Company:</strong>{{bookingDetails.companyShortName}}
+													</td>
+												</tr>
+												<tr>
+													<td class="white-card-text">
+														<strong>Billing Type:</strong>{{billbackName}}
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</div>
+							<!--[if (gte mso 9)|(IE)]>
+							</td><td width="50%" valign="top">
+							<![endif]-->
+							<div class="column vehicle-details">
+								<table width="100%" align="left">
+									<tr>
+										<td class="inner-card">
+											<table class="contents white-card">
+												<tr>
+													<td class="white-card-text" width="60%">
+														<strong>Renter:</strong>&nbsp;{{designatedRenter.firstname}} {{designatedRenter.lastname}}
+													</td>
+													<td class="white-card-text" width="30%">
+														<strong>Renter:</strong>&nbsp;{{designatedRenter.firstname}} {{designatedRenter.lastname}}
+													</td>
+												</tr>
+												<tr>
+													<td class="white-card-text" width="60%">
+														<strong>Renter:</strong>&nbsp;{{designatedRenter.firstname}} {{designatedRenter.lastname}}
+													</td>
+													<td class="white-card-text" width="30%">
+														<strong>Renter:</strong>&nbsp;{{designatedRenter.firstname}} {{designatedRenter.lastname}}
+													</td>
+												</tr>
+												<tr> 
+													<td class="white-card-text" width="60%">
+														<strong>Renter:</strong>&nbsp;{{designatedRenter.firstname}} {{designatedRenter.lastname}}
+													</td>
+													<td class="white-card-text" width="30%">
+														<strong>Renter:</strong>&nbsp;{{designatedRenter.firstname}} {{designatedRenter.lastname}}
+													</td>
+												</tr>
+												<tr>
+													<td class="white-card-text" width="60%">
+														<strong>Renter:</strong>&nbsp;{{designatedRenter.firstname}} {{designatedRenter.lastname}}
+													</td>
+													<td class="white-card-text" width="30%">
+														<strong>Renter:</strong>&nbsp;{{designatedRenter.firstname}} {{designatedRenter.lastname}}
+													</td>
+												</tr>
+												<tr>
+													<td class="white-card-text" width="60%">
+														<strong>Renter:</strong>&nbsp;{{designatedRenter.firstname}} {{designatedRenter.lastname}}
+													</td>
+													<td class="white-card-text" width="30%">
+														<strong>Renter:</strong>&nbsp;{{designatedRenter.firstname}} {{designatedRenter.lastname}}
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</div>
+							<!--[if (gte mso 9)|(IE)]>
+							</td>
+							</table>
+							</tr>
+							</table>
+							<![endif]-->
+						</td>
+					</table>
+				</tr>
 			</table>
 			<!--[if (gte mso 9)|(IE)]>
 			</td>
@@ -163,6 +258,6 @@
 			</table>
 			<![endif]-->
 		</div>
-	</center>
+	</div>
 </body>
 </html>

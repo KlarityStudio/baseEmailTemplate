@@ -15,6 +15,463 @@
 	<![endif]-->
 </head>
 <style type="text/css">
+		/* Basics */
+body {
+	margin: 0 !important;
+	padding: 0;
+	background-color: #eef1f3;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+table {
+	border-spacing: 0;
+	color: #333;
+	overflow: hidden; 
+}
+td {
+	padding: 0;
+}
+img {
+	border: 0;
+}
+div[style*="margin: 16px 0"] { 
+	margin:0 !important;
+}
+.column {
+	overflow: hidden;
+}
+.wrapper {
+	width: 100%;
+	table-layout: fixed;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+.webkit {
+	max-width: 650px;
+	padding: 0px;
+	padding-top: 40px;
+}
+.outer {
+	Margin: 0 auto;
+	width: 100%;
+	max-width: 600px;
+}
+.inner {
+	padding: 10px;
+}
+.contents {
+	width: 100%;
+}
+p {
+	Margin: 0;
+}
+a {
+	color: #ee6a56;
+	text-decoration: underline;
+}
+.h1 {
+	font-size: 21px;
+	font-weight: bold;
+	Margin-bottom: 18px;
+}
+.h2 {
+	font-size: 18px;
+	font-weight: bold;
+	Margin-bottom: 12px;
+}
+.full-width-image img {
+	width: 100%;
+	max-width: 600px;
+	height: auto;
+}
+
+/* One column layout */
+.one-column .contents {
+	text-align: left;
+}
+.one-column p {
+	font-size: 14px;
+	Margin-bottom: 10px;
+}
+
+/*Two column layout*/
+.two-column {
+	text-align: center;
+	font-size: 0;
+}
+.two-column .column {
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+.two-column .contents {
+	font-size: 14px;
+	text-align: left;
+}
+.two-column img {
+	width: 100%;
+	max-width: 280px;
+	height: auto;
+}
+.two-column .text {
+	padding-top: 10px;
+}
+
+/*Three column layout*/
+.three-column {
+	text-align: center;
+	font-size: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.three-column .column {
+	width: 100%;
+	max-width: 200px;
+	display: inline-block;
+	vertical-align: top;
+}
+.three-column img {
+	width: 100%;
+	max-width: 180px;
+	height: auto;
+}
+.three-column .contents {
+	font-size: 14px;
+	text-align: center;
+}
+.three-column .text {
+	padding-top: 10px;
+}
+
+/* Left sidebar layout */
+.left-sidebar {
+	text-align: center;
+	font-size: 0;
+}
+.left-sidebar .column {
+	width: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.left-sidebar .left {
+	max-width: 100px;
+}
+.left-sidebar .right {
+	max-width: 500px;
+}
+.left-sidebar .img {
+	width: 100%;
+	max-width: 80px;
+	height: auto;
+}
+.left-sidebar .contents {
+	font-size: 14px;
+	text-align: center;
+}
+.left-sidebar a {
+	color: #85ab70;
+}
+
+/* Right sidebar layout */
+.right-sidebar {
+	text-align: center;
+	font-size: 0;
+}
+.right-sidebar .column {
+	width: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.right-sidebar .left {
+	max-width: 100px;
+}
+.right-sidebar .right {
+	max-width: 500px;
+}
+.right-sidebar .img {
+	width: 100%;
+	max-width: 80px;
+	height: auto;
+}
+.right-sidebar .contents {
+	font-size: 14px;
+	text-align: center;
+}
+.right-sidebar a {
+	color: #70bbd9;
+}
+
+.card {
+	padding: 10px;
+}
+
+.card-text {
+	padding: 10px 0 10px 0;
+	margin-bottom: 2px;
+	font-size: 14px;
+	line-height: 16px;
+	color: #fff;
+}
+
+.card-text ul {
+	padding: 0;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style: none;
+	padding: 0;
+}
+
+.white-card {
+	background: #fff;
+	padding: 10px;
+}
+
+.white-card-text{
+	padding: 10px 0 10px 0;
+	font-size: 12px;
+	color: #666;
+}
+
+.banner-confirmed {
+	display: block;
+	margin-bottom: 0px;
+	padding: 16px 20px 20px 60px;
+	background-color: #19c361;
+	color: #fff;
+	font-size: 24px;
+	line-height: 24px;
+	text-align: center;
+	margin: 0;
+}
+
+.location-details {
+	background-color: #02458f;
+	background-color: linear-gradient(135deg, #005cb9, #02458f);
+}
+
+.location-details table {
+	color: #fff;
+	font-size: 12px; 
+	line-height: 20px;
+}
+
+.location-details h2 {
+	font-weight: 300;
+}
+
+.vehicle-title {
+	width: 400px;
+	text-align: left;
+}
+
+.vehicle-title-sub {
+	width:400px;
+	font-size: 12px;
+}
+
+.order-details {
+	background: #fff;
+}
+
+.vehicle-details .inner-card tr td {
+	display: inline-block;
+	overflow-wrap: break-word;
+}
+
+.vehicle-title div {
+	display: inline-block;
+    font-size: 10px;
+    vertical-align: text-top;
+}
+
+.trapeze-blue-top {
+	border-style: solid;
+	border-width: 20px 0 0 600px;
+	border-color: transparent transparent transparent #005cb9;
+	display: block;
+	background: #fff;
+}
+
+.trapeze-blue-bottom {
+	border-style: solid;
+	border-width: 20px 50px 30px 400px;
+	border-color: #005cb9;
+	display: block;
+	background: #fff;
+}
+
+.veh-image td {
+	margin-bottom: -30px;
+}
+
+.veh-img-container img {
+	max-width: 250px;
+	float: left;
+	margin-top: -70px;
+    margin-left: 30px;
+}
+
+.veh-group td {
+	border: 1px solid #005cb9;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 240px;
+    background: #005cb9;
+    text-align: center;
+}
+
+.veh-group td div {
+	padding-top: 10px;
+    font-size: 25px;
+    color: #fff;
+}
+
+.trapeze-blue {
+	padding: 0;
+}
+
+.booked-info li img {
+	max-width: 10px;
+    height: auto;
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
+.contents.booked-info {
+	font-size: 12px;
+}
+
+.veh-extra-info ul li {
+	display: inline-block;
+}
+
+.veh-extra-info ul {
+	width: 200px;
+    margin: 0;
+    float: left;
+}
+
+.order-details .inner-card table {
+	font-size: 12px;
+	padding: 0px;
+}
+
+.order-details .inner-card .white-card ul {
+	margin: 0px;
+}
+
+.order-details .inner-card .white-card div {
+	display: inline-block;
+}
+
+.order-details .inner-card .white-card .info {
+	padding: 5px 10px 5px 0px;
+}
+
+.order-details .inner-card .white-card .price {
+	float: right;
+	padding: 5px 10px 5px 0px;
+	background-color: #eef1f3;
+	width: 60px;
+    text-align: center;
+}
+
+.order-details .inner-card .white-card .headline {
+	padding: 5px 10px 5px 0px;
+	color: #0245a9;
+}
+
+.order-details .inner-card .white-card .headline-price {
+	color: #eef1f3;
+	float: right;
+    padding: 5px 10px 5px 0px;
+    background-color: #eef1f3;
+    width: 60px;
+    text-align: center;
+}
+
+.order-details .white-card-text.header-text {
+    padding: 10px 0px 10px 10px;
+    text-align: left;
+    background-color: #eef1f3;
+    width: 233px;
+    float: left;
+    color: #0245a9;
+}
+
+.order-details .white-card-text.header-price {
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    background-color: #eef1fb;
+    width: 80px;
+    float: left;
+    color: #0245a9;
+}
+
+.order-details .white-card-text.footer-text {
+	padding: 10px 0px 10px 10px;
+    text-align: left;
+    background-color: #0245A9;
+    width: 250px;
+    float: left;
+    color: #fff;
+}
+
+.order-details .white-card-text.footer-price {
+	padding: 10px 0px 10px 0px;
+    text-align: left;
+    background-color: #0245A9;
+    width: 60px;
+    float: left;
+    color: #fff;
+}
+
+.order-details {
+	height: 320px;
+    background-color: #0245A9;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 400px) {
+	.two-column .column,
+	.three-column .column {
+		width: 100% !important;
+	}
+	.two-column img {
+		width: 100% !important;
+	}
+	.trapeze-blue-top {
+	    border-width: 20px 0 0 500px;
+	    margin-bottom: -1px;
+	}
+	.webkit {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+@media screen and (min-width: 401px) and (max-width: 700px) {
+	.three-column .column {
+		width: 100% !important;
+	}
+	.two-column .column {
+		width: 100% !important;
+	}
+	.trapeze-blue-top {
+	    border-width: 20px 0 0 500px;
+	    margin-bottom: -1px;
+	}
+	.webkit {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
 
 </style>
 <body>
@@ -161,7 +618,7 @@
 				</tr>
 				<tr>
 					<table width="100%">
-						<td class="two-column">
+						<td class="two-column vehicle-payment">
 							<!--[if (gte mso 9)|(IE)]>
 							<table width="100%">
 								<tr>
@@ -175,7 +632,9 @@
 												<tr>
 													<td>
 														<h3 class="vehicle-title" align="left">{{Vehicle_name}}<div align="right">Or similar<div></h3>
-														<div>{{standard cover}} {{excess waiver}}</div>
+													</td>
+													<td>
+														<div class="vehicle-title-sub">{{standard cover}} {{excess waiver}}</div>
 													</td>
 												</tr>
 											</table>
@@ -185,20 +644,11 @@
 										<td class="inner-card">
 											<table class="contents white-card booked-info"  align="left">
 												<tr>
-													<td width="30%">
+													<td>
 														<ul>
-															<li>{{100KM per day}}</li>
-															<li>{{100KM per day}}</li>
-															<li>{{100KM per day}}</li>
-														</ul>
-													</td>
-													<td class="veh-extra-info" width="70%" >
-														<ul>
-															<li><img src="../images/airbags2x.png" alt="Smiley face">Airbags</li>
-															<li><img src="../images/aircon2x.png" alt="Smiley face">Aircon</li>
-															<li><img src="../images/airbags2x.png" alt="Smiley face">Airbags</li>
-															<li><img src="../images/aircon2x.png" alt="Smiley face">Aircon</li>
-															<li><img src="../images/aircon2x.png" alt="Smiley face">Aircon</li>
+															<li><img src="../images/pricing-included2x.png" alt=".">{{100KM per day}}</li>
+															<li><img src="../images/pricing-included2x.png" alt=".">{{100KM per day}}</li>
+															<li><img src="../images/pricing-included2x.png" alt=".">{{100KM per day}}</li>
 														</ul>
 													</td>
 												</tr>
@@ -234,55 +684,66 @@
 							<!--[if (gte mso 9)|(IE)]>
 							</td><td width="50%" valign="top">
 							<![endif]-->
-							<div class="column vehicle-details">
+							<div class="column order-details">
+							<div>
+								<div class="white-card-text header-text">No Day Rental {{company nice name}}</div>
+								<div class="white-card-text header-price">{{R180}}</div>
+							</div>
 								<table width="100%" align="left">
 									<tr>
 										<td class="inner-card">
 											<table class="contents white-card">
 												<tr>
-													<td class="white-card-text" width="70%">
-														<strong>Renter:</strong>&nbsp;{{designatedRenter.firstname}} {{designatedRenter.lastname}}
-													</td>
-													<td class="white-card-text" width="30%">
-														<strong>{{R180}}</strong>
+													<td>
+														<ul>
+															<li>
+																<div class="info">{{100KM per day}}</div>
+																<div class="price">{{R100}}</div>
+															</li>
+															<li>
+																<div class="headline">{{100KM per day}}</div>
+																<div class="headline-price">{{R100}}</div>
+															</li>
+															<li>
+																<div class="info">{{100KM per day}}</div>
+																<div class="price">{{R100}}</div>
+															</li>
+															<li>
+																<div class="info">{{100KM per day}}</div>
+																<div class="price">{{R100}}</div>
+															</li>
+															<li>
+																<div class="info">{{100KM per day}}</div>
+																<div class="price">{{R100}}</div>
+															</li>
+															<li>
+																<div class="headline">{{100KM per day}}</div>
+																<div class="headline-price">{{R100}}</div>
+															</li>
+															<li>
+																<div class="info">{{100KM per day}}</div>
+																<div class="price">{{R100}}</div>
+															</li>
+															<li>
+																<div class="info">{{100KM per day}}</div>
+																<div class="price">{{R100}}</div>
+															</li>
+															<li>
+																<div class="info">{{100KM per day}}</div>
+																<div class="price">{{R100}}</div>
+															</li>
+														</ul>
 													</td>
 												</tr>
-												<tr>
-													<td class="white-card-text" width="70%">
-														<strong>Renter:</strong>&nbsp;{{designatedRenter.firstname}} {{designatedRenter.lastname}}
-													</td>
-													<td class="white-card-text" width="30%">
-														<strong>{{R180}}</strong>
-													</td>
-												</tr>
-												<tr> 
-													<td class="white-card-text" width="70%">
-														<strong>Renter:</strong>&nbsp;{{designatedRenter.firstname}} {{designatedRenter.lastname}}
-													</td>
-													<td class="white-card-text" width="30%">
-														<strong>{{R180}}</strong>
-													</td>
-												</tr>
-												<tr>
-													<td class="white-card-text" width="70%">
-														<strong>Renter:</strong>&nbsp;{{designatedRenter.firstname}} {{designatedRenter.lastname}}
-													</td>
-													<td class="white-card-text" width="30%">
-														<strong>{{R180}}</strong>
-													</td>
-												</tr>
-												<tr>
-													<td class="white-card-text" width="70%">
-														<strong>Renter:</strong>&nbsp;{{designatedRenter.firstname}} {{designatedRenter.lastname}}
-													</td>
-													<td class="white-card-text" width="30%">
-														<strong>{{R180}}</strong>
-													</td>
-												</tr>
+												
 											</table>
 										</td>
 									</tr>
 								</table>
+							<div>
+								<div class="white-card-text footer-text"></div>
+								<div class="white-card-text footer-price">{{R180}}</div>
+							</div>
 							</div>
 							<!--[if (gte mso 9)|(IE)]>
 							</td>

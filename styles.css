@@ -341,7 +341,7 @@ li {
 }
 
 .order-details .inner-card table {
-	font-size: 12px;
+	font-size: 10px;
 	padding: 0px;
 }
 
@@ -354,20 +354,30 @@ li {
 }
 
 .order-details .inner-card .white-card .info {
+	width: 100%;
 	padding: 5px 10px 5px 0px;
+}
+
+.order-details .inner-card .white-card .info div {
+	padding-left: 50%;
 }
 
 .order-details .inner-card .white-card .price {
 	float: right;
 	padding: 5px 10px 5px 0px;
 	background-color: #eef1f3;
-	width: 60px;
+	width: 94px;
     text-align: center;
 }
 
 .order-details .inner-card .white-card .headline {
 	padding: 5px 10px 5px 0px;
 	color: #0245a9;
+	width: 100%;
+}
+
+.order-details .inner-card .white-card .headline div {
+	padding-left: 50%;
 }
 
 .order-details .inner-card .white-card .headline-price {
@@ -375,7 +385,7 @@ li {
 	float: right;
     padding: 5px 10px 5px 0px;
     background-color: #eef1f3;
-    width: 60px;
+    width: 94px;
     text-align: center;
 }
 
@@ -383,7 +393,7 @@ li {
     padding: 10px 0px 10px 10px;
     text-align: left;
     background-color: #eef1f3;
-    width: 233px;
+    width: 220px;
     float: left;
     color: #0245a9;
 }
@@ -392,7 +402,7 @@ li {
     padding: 10px 0px 10px 0px;
     text-align: center;
     background-color: #eef1fb;
-    width: 80px;
+    width: 94px;
     float: left;
     color: #0245a9;
 }
@@ -418,6 +428,15 @@ li {
 .order-details {
 	height: 320px;
     background-color: #0245A9;
+
+}
+
+.vehicle-details {
+	height: 320px;
+}
+
+.order-details .inner-card table {
+	font-size: 10px;
 }
 
 /*Media Queries*/
@@ -436,6 +455,29 @@ li {
 	.webkit {
 		padding-left: 10px;
 		padding-right: 10px;
+	}
+	.order-details .inner-card .white-card .price {
+		width: 100%;
+	}
+
+	.order-details .inner-card .white-card .headline-price {
+		width: 100%;
+	}
+
+	.order-details .white-card-text.header-text {
+	    width: 100%;
+	}
+
+	.order-details .white-card-text.header-price {
+	    width: 100%;
+	}
+
+	.order-details .white-card-text.footer-text {
+		width: 100%;
+	}
+
+	.order-details .white-card-text.footer-price {
+		width: 100%;
 	}
 }
 

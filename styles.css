@@ -29,7 +29,7 @@ div[style*="margin: 16px 0"] {
 	margin: 0 auto;
 }
 .outer {
-	Margin: 0 auto;
+	margin: 0 auto;
 	width: 100%;
 	max-width: 600px;
 }
@@ -40,7 +40,7 @@ div[style*="margin: 16px 0"] {
 	width: 100%;
 }
 p {
-	Margin: 0;
+	margin: 0;
 }
 a {
 	color: #ee6a56;
@@ -49,12 +49,12 @@ a {
 .h1 {
 	font-size: 21px;
 	font-weight: bold;
-	Margin-bottom: 18px;
+	margin-bottom: 18px;
 }
 .h2 {
 	font-size: 18px;
 	font-weight: bold;
-	Margin-bottom: 12px;
+	margin-bottom: 12px;
 }
 .full-width-image img {
 	width: 100%;
@@ -68,7 +68,7 @@ a {
 }
 .one-column p {
 	font-size: 14px;
-	Margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 /*Two column layout*/
